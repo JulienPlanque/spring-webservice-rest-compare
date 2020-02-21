@@ -6,5 +6,6 @@
   <packaging>pom</packaging>
   <modules>
   	<module>spring-webservice-rest-with-spring-boot</module>
+  	<module>spring-webservice-rest-without-spring-boot</module>
   </modules>
 </project>
