@@ -25,10 +25,7 @@ public class Application {
         JarScanner jarScanner = new StandardJarScanner();
         ((StandardJarScanner)jarScanner).setScanManifest(false);
         ctx.setJarScanner(jarScanner);
-        File additionWebInfClasses = new File("target/classes");
         WebResourceRoot resources = new StandardRoot(ctx);
-        resources.addPreResources(new DirResourceSet(resources, "/WEB-INF/classes",
-                additionWebInfClasses.getAbsolutePath(), "/"));
         ctx.setResources(resources);
         tomcat.getConnector();
         tomcat.start();
